@@ -1,0 +1,33 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    // font-family: $fuentePrincipal;
+    // background-color: #1f1e1e;
+}
+
+h1,h2,h3,p,a{
+    margin: 0;
+    // color: $blanco;
+    font-size: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.contenedor{
+    max-width: 150rem;
+    width: 90%;
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+        width: 95%;
+    }
+}

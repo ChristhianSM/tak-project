@@ -1,0 +1,10 @@
+@import './bases/normalize';
+@import './bases/variables';
+@import './bases/mixins';
+@import './bases/globales';
+@import './bases/utilidades';
+
+
+/* Layouts */
+@import './layout/header';
+@import './layout/footer'

@@ -1,0 +1,25 @@
+.header {
+    padding: $separacion 0;
+
+    .contenedor-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+
+        }
+
+        .navegacion {
+
+            display: flex;
+            gap: 1rem;
+            
+            a {
+                text-decoration: none;
+                color: $negro;
+            }
+        }
+    }
+
+}
