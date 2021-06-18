@@ -3,4 +3,11 @@
 /* Paleta de colores */
 $negro : black;
 
+
+
+@font-face {
+    font-family: 'futuraMD';
+    src: url("/src/fonts/Futura\ Bold\ Italic\ font.ttf");
+}
+$fuente: 'futuraMB';
 $separacion: 2rem;

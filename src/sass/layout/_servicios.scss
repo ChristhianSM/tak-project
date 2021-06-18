@@ -1,0 +1,57 @@
+#servicios {
+    margin-top: 50rem;
+    padding-top: 10rem;
+
+    .titulo-general {
+        text-align: center;
+        font-size: 5rem;
+        color: #1F1F44;
+        margin-bottom: 2rem;
+    }
+
+    .contenedor-servicios {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5rem;
+        align-items: center;
+        justify-content: space-between;
+
+        .row {
+            margin: 0 auto;
+            .card-servicio {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 5rem;
+                align-items: center;
+                gap: 3rem;
+                
+                .info {
+                    width: 306px;
+
+                    h3{
+                        font-size: 2.2rem;
+                        text-align: center;
+                        font-weight: 900;
+                        margin-bottom: 1rem;
+                    }
+                    p{
+                        font-style: italic;
+                        font-size: 1.5rem;
+                        text-align: center;
+                    }
+                }
+
+                img {
+                    width: 73px;
+                    height: 73px;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+
+            .img-celular {
+                
+            }
+        }
+    }
+}

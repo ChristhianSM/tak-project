@@ -9,43 +9,173 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 
+    <!-- Animaciones AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="./src/sass/app.css">
 </head>
 <body>
     <header class="header">
-        <div class="contenedor contenedor-header">
+        <div class=" contenedor-header">
             <div class="logo">
-                <img src="" class="logo-imagen" alt="">
+                <img src="/src/img/Frame logo.png" class="logo-imagen" alt="">
             </div> 
             <div class="navegacion">
-                <a href="#">Inicio</a>
-                <a href="#">¿Quienes Somos</a>
-                <a href="#">Servicios</a>
-                <a href="#">Blog</a>
-                <a href="#">Trabaja con Nosotros</a>
-                <a href="#">Redes Sociales</a>
+                <a href="#">Home</a>
+                <a href="#quienes-somos">Quienes somos</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#blog">Blog/Tutoriales</a>
+                <a href="#contacto">Contacto</a>
             </div>
         </div>
+
+        <section id="quienes-somos" data-aos = "fade-up" data-aos-delay="1000" data-aos-duration="2000">
+            <img src="./src/img/Imagen quienes somos.png" alt="" class="img-quienes-somos" data-aos="fade-right" data-aos-offset="600" data-aos-easing="linear" data-aos-duration="500" data-aos-delay ="500">
+            <div class="informacion">
+                <div class="vector1" data-aos="fade-left" data-aos-duration="900" data-aos-easing="ease-in-sine" data-aos-delay ="500"></div>
+                <div class="vector2" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay ="700"></div>
+                <div class="vector3" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1200" data-aos-delay ="900"></div>
+                <h2 class="titulo" data-aos="fade-zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1200">Sobre TAK !</h2>
+                <p class="parrafo-1" data-aos="fade-left">
+                Somos un grupo de profesionales apasionados por el mundo digital y la comunicación, en busca de soluciones creativas para los issues de nuestros clientes. Creemos en el trabajo en equipo y la diversidad de opiniones, sabemos que siempre se obtienen mejores resultados en la variedad.</p>
+                <p class="parrafo-2" data-aos="fade-up-left">Estamos acá para ayudarte a comunicarte mejor con tu cliente, por medio de mensajes más claros, sencillos y en el medio adecuado. </p>
+            </div>
+        </section>
     </header>
 
     <main>
-        <section id="quienes_somos">
-
+        <section id="servicios" class="contenedor">
+            <h2 class="titulo-general" data-aos="fade-left" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">Nuestros Servicios</h2>
+            <div class="contenedor-servicios">
+                <div class="row">
+                    <div class="card-servicio" data-aos="fade-right" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">
+                        <div class="info">
+                            <h3> Análisis y Estrategia de Comunicación Digital </h3>
+                            <p> Investigamos tu entorno digital y el de tu competencia para realizar un diagnóstico, y a partir de allí delineamos una estrategia de comunicación acorde a tu marca.</p>
+                        </div>
+                        <img src="/src/img/Vector (1).png" alt="" >
+                    </div>
+                    <div class="card-servicio" data-aos="fade-right" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">
+                        <div class="info">
+                            <h3>Gestión de Redes Sociales</h3>
+                            <p>Armamos un plan integral de redes sociales para poder gestionarlas en su totalidad.</p>
+                        </div>
+                      
+                      
+                        <img src="./src/img/Groupu.png" alt="">
+                    </div>
+                    <div class="card-servicio" data-aos="fade-right" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">
+                        <div class="info">
+                            <h3>Diseño y creación de Contenido </h3>
+                            <p>Planificamos y diseñamos los contenidos de tus redes. Fotografía. Videos y Diseño Gráfico</p>
+                        </div>
+                        <img src="./src/img/Group 44.png" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="./src/img/iPhone SE 2020.png" alt="" class="img-celular" data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">
+                </div>
+                <div class="row">
+                    <div class="card-servicio" data-aos="fade-left" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">
+                        <img src="/src/img/Group 46.png" alt="">
+                        <div class="info">
+                            <h3> Publicidad en Redes Sociales </h3>
+                            <p>Pautamos en Facebook e Instagram a partir de una estrategia de publicidad diseñada previamente.</p>
+                        </div>
+                    </div>
+                    <div class="card-servicio" data-aos="fade-left" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">
+                        <img src="./src/img/Group.png" alt="">
+                        <div class="info">
+                            <h3>Asesoramiento</h3>
+                            <p>Brindamos asesoramiento a marcas que quieran empezar el proceso de digitalización de su negocio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="servicios">
+        <section id="blog" class="contenedor">
+            <h2 data-aos="fade-right" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">Nuestros Blogs y Tutos</h2>
+            <p data-aos="fade-right" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200"> Las mejores notas y datos </p>
+            <div class="vector1" data-aos="fade-left" data-aos-duration="900" data-aos-easing="ease-in-sine" data-aos-delay ="500"></div>
+            <div class="vector2" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay ="700"></div>
+            <div class="vector3" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1200" data-aos-delay ="900"></div>
+            <div class="contenedor-blog">
+                <div class="column-1" data-aos="fade-right" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">
+                    <div class="card-blog bloque-completo">
+                        <img src="./src/img/email-marketing.png" alt="">
+                    </div>
 
+                    <div class="row">
+                        <div class="card-blog bloque-medio">
+                            <img src="./src/img/Social Media (1).png" alt="">
+                        </div>
+                        <div class="card-blog bloque-medio">
+                            <img src="./src/img/Social Media (1).png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column-2" data-aos="fade-left" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">
+                    <div class="row">
+                        <div class="card-blog bloque-medio">
+                            <img src="./src/img/social-recruiting-redes-sociales-810x766 1.png" alt="">
+                        </div>
+                        <div class="card-blog bloque-medio">
+                            <img src="./src/img/social-recruiting-redes-sociales-810x766 2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="card-blog bloque-completo">
+                        <img src="./src/img/facebook-ads-hoteles.png" alt="">
+                    </div>
+    
+                    
+                </div>
+               
+            </div>
         </section>
-        <section id="blog">
 
-        </section>
+        <section id="contacto" class="contenedor">
+            <h2 data-aos="zoom-in-down" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">Llego la hora que trabajemos juntos </h2>
+            <p data-aos="zoom-in-down" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">¡Nos encantaria saber de vos, dejanos un mensaje y charlemos!</p>
+            <h3 data-aos="zoom-in-down" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">Elegí uno o mas temas</h3>
+            <div class="temas" data-aos="zoom-in-down" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">
+                <div class="check">
+                    <input type="checkbox" name="" id="tema1">
+                    <label for="tema1">Análisis y Estrategia de Comunicación Digital</label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" name="" id="tema2">
+                    <label for="tema2">Análisis y Estrategia de Comunicación Digital</label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" name="" id="tema3">
+                    <label for="tema3">Análisis y Estrategia de Comunicación Digital</label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" name="" id="tema4">
+                    <label for="tema4">Análisis y Estrategia de Comunicación Digital</label>
+                </div>
+            </div>
 
-        <section id="trabajemos_juntos">
+            <h3>Tu mensaje</h3>
+            <div class="contenedor-formulario" data-aos="fade-up-right" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">
+                <form action="" class="formulario-contacto">
+                    <input type="text" placeholder="Tu nombre">
+                    <input type="text" placeholder="Tu mail">
+                    <input type="text" placeholder="Tu telefono">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Deja tu mensaje"></textarea>
+    
+                    <button>Enviar</button>
+                </form>
 
+                <img src="./src/img/corinne-kutz-tMI2_-r5Nfo-unsplash 1.png" alt="" data-aos="fade-up-left" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">
+            </div>
         </section>
     </main>
 
     <footer class="footer">
         <div class="contenedor contenedor-redes">
+            <h2>Encuentranos tambien en</h2>
             <div class="redes-sociales">
                 <a href=""> 
                     <i class="fab fa-facebook-square"></i>
@@ -59,5 +189,16 @@
             </div>
         </div>
     </footer>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Script AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Animaciones.js -->
+    <script src="./src/js/animaciones.js"></script>
 </body>
 </html>

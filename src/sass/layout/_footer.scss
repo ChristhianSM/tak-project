@@ -1,13 +1,25 @@
 .footer {
-
+    margin-top: 10rem;
     .contenedor-redes {
-
+        text-align: center;
+        margin-bottom: 2rem;
+        h2 {
+            color: #1F1F44;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 25px;
+            line-height: 2;
+        }
 
         .redes-sociales {
-
             a {
+                margin-left: 2rem;
                 i{
-                    font-size: 3rem;
+                    font-size: 4rem;
+                    color: #1F1F44;
                 }
             }
         }
