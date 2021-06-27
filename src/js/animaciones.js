@@ -2,10 +2,13 @@ $(document).ready(function () {
     let flag = false;
     let scroll;
 
+    const subir = $('.subir');
+    subir.hide()
+
     $(window).scroll(function () { 
         scroll = $(window).scrollTop();
-        console.log(scroll)
         if (scroll > 200) {
+            $(subir).fadeIn();
             if (!flag) {
                 $(".logo").css({
                     top: "0px",
@@ -30,6 +33,7 @@ $(document).ready(function () {
                 flag = true;
             }
         }else{
+            $(subir).fadeOut();
             if (flag) {
                 $(".logo").css({
                     top: "250px",

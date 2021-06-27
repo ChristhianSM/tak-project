@@ -145,27 +145,31 @@
                 </div>
                 <div class="check">
                     <input type="checkbox" name="" id="tema2">
-                    <label for="tema2">Análisis y Estrategia de Comunicación Digital</label>
+                    <label for="tema2">Gestion de Redes Sociales</label>
                 </div>
                 <div class="check">
                     <input type="checkbox" name="" id="tema3">
-                    <label for="tema3">Análisis y Estrategia de Comunicación Digital</label>
+                    <label for="tema3">Diseño y creacion de Contenido</label>
                 </div>
                 <div class="check">
                     <input type="checkbox" name="" id="tema4">
-                    <label for="tema4">Análisis y Estrategia de Comunicación Digital</label>
+                    <label for="tema4">Publicidad en Redes Sociales</label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" name="" id="tema5">
+                    <label for="tema5">Asesoramiento</label>
                 </div>
             </div>
 
             <h3>Tu mensaje</h3>
             <div class="contenedor-formulario" data-aos="fade-up-right" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">
-                <form action="" class="formulario-contacto">
-                    <input type="text" placeholder="Tu nombre">
-                    <input type="text" placeholder="Tu mail">
-                    <input type="text" placeholder="Tu telefono">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Deja tu mensaje"></textarea>
+                <form class="formulario-contacto">
+                    <input type="text" placeholder="Tu nombre" class="nombre">
+                    <input type="email" placeholder="Tu mail" class="email">
+                    <input type="tel" placeholder="Tu telefono" class="telefono">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Deja tu mensaje" class="mensaje"></textarea>
     
-                    <button>Enviar</button>
+                    <button class="btn-enviar" disabled>Enviar</button>
                 </form>
 
                 <img src="./src/img/corinne-kutz-tMI2_-r5Nfo-unsplash 1.png" alt="" data-aos="fade-up-left" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">
@@ -175,7 +179,7 @@
 
     <footer class="footer">
         <div class="contenedor contenedor-redes">
-            <h2>Encuentranos tambien en</h2>
+            <h2 data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">Encuentranos tambien en</h2>
             <div class="redes-sociales">
                 <a href=""> 
                     <i class="fab fa-facebook-square"></i>
@@ -187,8 +191,13 @@
                     <i class="fab fa-youtube"></i>
                 </a>
             </div>
+            <div class="logo-footer" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay ="200">
+                <img src="/src/img/Frame logo.png" class="logo-imagen" alt="">
+            </div> 
         </div>
     </footer>
+
+    <a href="#" class="subir"> Subir </a>
 
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -198,7 +207,9 @@
     <script>
         AOS.init();
     </script>
+
     <!-- Animaciones.js -->
     <script src="./src/js/animaciones.js"></script>
+    <script src="./src/js/app.js"></script>
 </body>
 </html>
