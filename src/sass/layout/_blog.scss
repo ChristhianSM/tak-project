@@ -7,6 +7,7 @@
     }
 
     h2 {
+        text-align: center;
         font-size: 4rem;
         line-height: 1;
         font-style: italic;
@@ -26,7 +27,7 @@
         background-color:  #FBDE4A;
         position: absolute;
         top: 100px;
-        left: 430px;
+        right: 100px;
 
         @include tablet {
             right: 10px;
@@ -44,7 +45,7 @@
         background-color:  #294898;
         position: absolute;
         top: 129px;
-        left: 400px;
+        right: 100px;
 
         @include tablet {
             left: 80%;
@@ -62,7 +63,7 @@
         background-color:  #EE4498;
         position: absolute;
         top: 135px;
-        left: 500px;
+        right: 200px;
 
         @include tablet {
             left: 90%;
@@ -79,6 +80,70 @@
         align-items: center;
         justify-content: space-around;
         flex-wrap: wrap;
+
+        .card-blog{ 
+            position: relative;
+
+            .link-blog {
+                position: absolute;
+                top: 15px;
+                right: 20px;
+                color: rgb(0, 0, 0);
+                background-color: #F0F0F0;
+                border: 1px solid #F0F0F0;
+                border-radius: 5px;
+                padding: 5px 10px;
+                text-transform: uppercase;
+                font-size: 1.5rem;
+                font-style: italic;
+                cursor: pointer;
+            }
+
+            .info-blog{
+                position: absolute;
+                bottom: -20px;
+                left: 20px;
+                width: 170px;
+
+                .titulo {
+                    font-size: 2.6rem;
+                    color: white;
+                    font-style: italic;
+                    margin-bottom: 1rem;
+                    font-weight: 700;
+                }
+
+                .fecha {
+                    color: white;
+                    font-style: normal;
+                }
+            }
+
+            .info-blog-medio {
+                bottom: -30px;
+
+                @include telefono {
+                    bottom: 0px;
+                }
+
+                .titulo {
+                    font-size: 2rem;
+                    color: white;
+                    font-style: italic;
+                    margin-bottom: 1rem;
+                    font-weight: 700;
+                }
+
+                .fecha {
+                    color: white;
+                    font-style: normal;
+
+                    @include telefono {
+                        display: none;
+                    }
+                }
+            }
+        }
 
         .column-1 {
             width: 45%;

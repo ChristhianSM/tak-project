@@ -31,6 +31,8 @@
 
         .row {
             margin: 0 auto;
+            position: relative;
+
             .card-servicio {
                 display: flex;
                 justify-content: space-between;
@@ -40,7 +42,7 @@
                 
                 .info {
                     width: 306px;
-
+                    cursor: pointer;
                     h3{
                         font-size: 2.2rem;
                         text-align: center;
@@ -69,6 +71,24 @@
             .img-celular {
                 
                 @include tablet {
+                    display: none;
+                }
+            }
+
+            .img-celular-variable {
+                position: absolute;
+                background-image: url("/src/img/Screen.png");
+                top: 55px;
+                height: 75%;
+                width: 80%;
+                background-color: blue;
+                left: 25px;
+                background-position: center;
+                background-size: cover;
+
+
+
+                @include tablet{
                     display: none;
                 }
             }

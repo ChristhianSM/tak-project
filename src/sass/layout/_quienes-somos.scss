@@ -1,11 +1,17 @@
 #quienes-somos{
-    margin-top: 700px;
+    padding-top: 120px;
     display: flex;
     align-items: center;
+    position: absolute;
+    top: 500px;
+    width: 100%;
 
     img{
         width: 500px;
 
+        @include desktop {
+            width: 500px;
+        }
         @include tablet {
             width: 300px;
         }
