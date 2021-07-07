@@ -117,10 +117,10 @@
 
             button {
                 width: 25%;
-                border: 2px solid #70AF50;
+
+                border: 2px solid;
                 border-radius: 25px;
                 font-size: 1.8rem;
-                cursor: pointer;
 
                 @include tablet {
                     height: 40px;

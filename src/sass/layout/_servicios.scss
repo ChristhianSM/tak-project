@@ -6,6 +6,10 @@
         margin-top: 20rem;
     }
 
+    @include telefono {
+        margin-top: 30rem;
+    }
+
     .titulo-general {
         text-align: center;
         font-size: 5rem;

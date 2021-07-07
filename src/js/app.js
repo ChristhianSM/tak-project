@@ -55,12 +55,18 @@ function validarCampo(e){
         })
 
         btnEnviar.disabled = false;
+        $(btnEnviar).css({
+            // backgroundColor : 'green',
+            color: 'green',
+            cursor : 'pointer',
+        });
         datosIngresados.mensaje = mensaje.value
         datosIngresados.nombre = nombre.value
         datosIngresados.email = email.value
         datosIngresados.telefono = telefono.value
     }else{
         btnEnviar.disabled = true;
+        
     }
 }
 
