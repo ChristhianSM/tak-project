@@ -18,6 +18,7 @@
         line-height: 1;
         font-style: italic;
         margin-bottom: 5rem;
+        text-align: center;
     }
 
     .vector1 {
@@ -80,7 +81,21 @@
         align-items: center;
         justify-content: space-around;
         flex-wrap: wrap;
+        position: relative;
 
+        .info-blog {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            width: 290px;
+
+            .titulo {
+                font-size: 3rem;
+                color: white;
+                font-style: italic;
+                font-weight: bold;
+            }
+        }
         .card-blog{ 
             position: relative;
 
@@ -99,7 +114,7 @@
                 cursor: pointer;
             }
 
-            .info-blog{
+            /* .info-blog{
                 position: absolute;
                 bottom: -20px;
                 left: 20px;
@@ -117,7 +132,7 @@
                     color: white;
                     font-style: normal;
                 }
-            }
+            } */
 
             .info-blog-medio {
                 bottom: -30px;

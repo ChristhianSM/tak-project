@@ -139,93 +139,42 @@ let {y:coordernadasQuienes} = document.querySelector('#quienes-somos').getBoundi
 let {y:coordenadasServicios} = document.querySelector('#servicios').getBoundingClientRect();
 let {y:coordenadasBlog} = document.querySelector('#blog').getBoundingClientRect();
 let {y:coordenadasContacto} = document.querySelector('#contacto').getBoundingClientRect();
+console.log(coordernadasQuienes);
+console.log(coordenadasServicios);
+console.log(coordenadasBlog);
+console.log(coordenadasContacto);
 
 $(window).scroll(function () { 
     scroll = $(window).scrollTop();
+    console.log(scroll);
 
-    if (scroll >= 0 && scroll <= coordernadasQuienes - 1) {
-        $('.barra-dos').css({
-            backgroundColor: 'white'
-        });
-        $('.barra-tres').css({
-            backgroundColor: 'white'
-        });
-        $('.barra-cuatro').css({
-            backgroundColor: 'white'
-        });
-        $('.barra-cinco').css({
-            backgroundColor: 'white'
-        });
-
-        $('.barra-uno').css({
-            backgroundColor: 'yellow'
-        });
-    }else if (scroll >= coordernadasQuienes - 100 && scroll <= coordenadasServicios -1 ) {
-        $('.barra-uno').css({
-            backgroundColor: 'white'
-        });
-        $('.barra-tres').css({
-            backgroundColor: 'white'
-        });
-        $('.barra-cuatro').css({
-            backgroundColor: 'white'
-        });
-        $('.barra-cinco').css({
-            backgroundColor: 'white'
-        });
-
-        $('.barra-dos').css({
-            backgroundColor: '#70AF50'
-        });
+    if (scroll >= 0 && scroll <= coordernadasQuienes - 119) {
+        limpiarBarraColor('.navegacion');
+        mostrarBarraColor('.navegacion','uno','yellow');
+        limpiarColorTexto();
+        cambiarColorTexto('.link-1','#48334F');
+    }else if (scroll >= coordernadasQuienes - 120 && scroll <= coordenadasServicios -1 ) {
+        limpiarBarraColor('.navegacion');
+        mostrarBarraColor('.navegacion','dos','#70AF50');
+        limpiarColorTexto();
+        cambiarColorTexto('.link-2','#48334F');
     }else if (scroll >= coordenadasServicios && scroll <= coordenadasBlog - 1){
-        $('.barra-uno').css({
-            backgroundColor: 'white'
-        });
-        $('.barra-dos').css({
-            backgroundColor: 'white'
-        });
-        $('.barra-cuatro').css({
-            backgroundColor: 'white'
-        });
-        $('.barra-cinco').css({
-            backgroundColor: 'white'
-        });
-        $('.barra-tres').css({
-            backgroundColor: '#EE4498'
-        });
+        limpiarBarraColor('.navegacion');
+        mostrarBarraColor('.navegacion','tres','#EE4498');
+        limpiarColorTexto();
+        cambiarColorTexto('.link-3','#48334F');
     }else if (scroll >= coordenadasBlog && scroll <= coordenadasContacto - 100){
-        $('.barra-uno').css({
-            backgroundColor: 'white'
-        });
-        $('.barra-tres').css({
-            backgroundColor: 'white'
-        });
-        $('.barra-dos').css({
-            backgroundColor: 'white'
-        });
-        $('.barra-cinco').css({
-            backgroundColor: 'white'
-        });
-        $('.barra-cuatro').css({
-            backgroundColor: 'yellow'
-        });
-    }else if (scroll >= coordenadasContacto){
-        $('.barra-uno').css({
-            backgroundColor: 'white'
-        });
-        $('.barra-tres').css({
-            backgroundColor: 'white'
-        });
-        $('.barra-cuatro').css({
-            backgroundColor: 'white'
-        });
-        $('.barra-dos').css({
-            backgroundColor: 'white'
-        });
-        $('.barra-cinco').css({
-            backgroundColor: '#70AF50'
-        });
+        limpiarBarraColor('.navegacion');
+        mostrarBarraColor('.navegacion','cuatro','yellow');
+        limpiarColorTexto();
+        cambiarColorTexto('.link-4','#48334F');
+    }else if (scroll >= coordenadasContacto - 120){
+        limpiarBarraColor('.navegacion');
+        mostrarBarraColor('.navegacion','cinco','#70AF50');
+        limpiarColorTexto();
+        cambiarColorTexto('.link-5','#48334F');
     }
+    
 });
 
 /* Animacion del menu mobile */
@@ -243,12 +192,16 @@ btnMenu.addEventListener('click', () => {
 
     if (btnMenu.classList.contains('visible')) {
         $('.header-mobile').css({
+            height:'100%',
+            width: '100vh',
             backgroundColor : 'rgba(0,0,0,0.75)',
             transition : 'all 0.5s'
         });
         $('.btn-menu').text('Cerrar');
     }else{
         $('.header-mobile').css({
+            height:'0',
+            width: '0',
             backgroundColor : 'transparent',
             transition : 'all 0.5s'
         });
@@ -265,113 +218,86 @@ const servicioTres = document.querySelector('.servicio-3');
 const servicioCuatro = document.querySelector('.servicio-4');
 const servicioCinco = document.querySelector('.servicio-5');
 servicioUno.addEventListener('mouseover', () => {
-    $(servicioUno).css({
-        color: '#FBDE48',
-        transition: 'all 0.8s'
-    });
-    $(servicioDos).css({
-        color: 'black'
-    });
-    $(servicioTres).css({
-        color: 'black'
-    });
-    $(servicioCuatro).css({
-        color: 'black'
-    });
-    $(servicioCinco).css({
-        color: 'black'
-    });
     $('.img-celular-variable').css({
-        backgroundImage: 'url("/src/img/Screen.png")',
+        backgroundImage: 'url("/src/img/Analisis-servicio.png")',
         transition: 'all 0.5s'
     });
+    limpiarBarraColor('#servicios');
+    mostrarBarraColor('#servicios', 'uno', 'yellow')
 })
 servicioDos.addEventListener('mouseover', () => {
-    $(servicioUno).css({
-        color: 'black'
-    });
-    $(servicioDos).css({
-        color: '#EE4498',
-        transition: 'all 0.8s'
-    });
-    $(servicioTres).css({
-        color: 'black'
-    });
-    $(servicioCuatro).css({
-        color: 'black'
-    });
-    $(servicioCinco).css({
-        color: 'black'
-    });
     $('.img-celular-variable').css({
-        backgroundImage: 'url("/src/img/Fondo 1.png")',
+        backgroundImage: 'url("/src/img/Gestion-de-redes-servicio.png")',
         transition: 'all 0.5s'
     });
+    limpiarBarraColor('#servicios');
+    mostrarBarraColor('#servicios', 'dos', '#EE4498')
+
 })
 servicioTres.addEventListener('mouseover', () => {
-    $(servicioUno).css({
-        color: 'black'
-    });
-    $(servicioDos).css({
-        color: 'black'
-    });
-    $(servicioTres).css({
-        color: '#70AF50',
-        transition: 'all 0.8s'
-    });
-    $(servicioCuatro).css({
-        color: 'black'
-    });
-    $(servicioCinco).css({
-        color: 'black'
-    });
+    limpiarBarraColor('#servicios');
+    mostrarBarraColor('#servicios', 'tres', '#71AF50')
     $('.img-celular-variable').css({
-        backgroundImage: 'url("/src/img/email-marketing.png")',
+        backgroundImage: 'url("/src/img/Diseño-servicio.png")',
         transition: 'all 0.5s'
     });
 })
 servicioCuatro.addEventListener('mouseover', () => {
-    $(servicioUno).css({
-        color: 'black'
-    });
-    $(servicioDos).css({
-        color: 'black'
-    });
-    $(servicioTres).css({
-        color: 'black'
-    });
-    $(servicioCuatro).css({
-        color: '#70AF50',
-        transition: 'all 0.8s'
-    });
-    $(servicioCinco).css({
-        color: 'black'
-    });
+    limpiarBarraColor('#servicios');
+    mostrarBarraColor('#servicios', 'cuatro', '#71AF50')
     $('.img-celular-variable').css({
-        backgroundImage: 'url("/src/img/facebook-ads-hoteles.png")',
+        backgroundImage: 'url("/src/img/Publicidad-servicio.png")',
         transition: 'all 0.5s'
     });
 })
 servicioCinco.addEventListener('mouseover', () => {
-    $(servicioUno).css({
-        color: 'black'
-    });
-    $(servicioDos).css({
-        color: 'black'
-    });
-    $(servicioTres).css({
-        color: 'black'
-    });
-    $(servicioCuatro).css({
-        color: 'black'
-    });
-    $(servicioCinco).css({
-        color: '#EE4498',
-        transition: 'all 0.8s'
-    });
+    limpiarBarraColor('#servicios');
+    mostrarBarraColor('#servicios', 'cinco', '#EE4498')
     $('.img-celular-variable').css({
-        backgroundImage: 'url("/src/img/Imagen quienes somos.png")',
+        backgroundImage: 'url("/src/img/Asesoramiento-servicio.png")',
         transition: 'all 0.5s'
     });
 })
 
+
+/* Funciones reutilizables */
+function limpiarBarraColor(localizacion){
+    console.log(`${localizacion} .barra-uno`);
+    $(`${localizacion} .barra-uno`).css({
+        backgroundColor: 'transparent'
+    });
+    $(`${localizacion} .barra-dos`).css({
+        backgroundColor: 'transparent'
+    });
+    $(`${localizacion} .barra-tres`).css({
+        backgroundColor: 'transparent'
+    });
+    $(`${localizacion} .barra-cuatro`).css({
+        backgroundColor: 'transparent'
+    });
+    $(`${localizacion} .barra-cinco`).css({
+        backgroundColor: 'transparent'
+    });
+}
+
+function mostrarBarraColor(localizacion, numero, color){
+    $(`${localizacion} .barra-${numero}`).css({
+        backgroundColor: `${color}`,
+        transition: 'all 0.8s'
+    })
+}
+
+function limpiarColorTexto(){
+    for (let i = 1; i <= 5; i++) {
+        $(`.link-${i}`).css({
+            color : '#8B8B8B'
+        });  
+    } 
+}
+
+function cambiarColorTexto(localizacion,color){
+    $(localizacion).css({
+        color : color,
+        transition: 'all 0.8s'
+    });
+}

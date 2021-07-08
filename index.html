@@ -21,23 +21,23 @@
                 <img src="/src/img/Frame logo.png" class="logo-imagen" alt="">
             </div> 
             <div class="navegacion">
-                <a href="#" data-id= "1">
+                <a href="#" data-id= "1" class="link-1">
                     Inicio
                     <div class="barra barra-uno barra-1"></div>
                 </a>
-                <a href="#quienes-somos" data-id= "2">
+                <a href="#quienes-somos" data-id= "2" class="link-2">
                     Quienes somos
-                    <div class="barra barra-dos"></div>
+                    <div class="barra barra-dos" ></div>
                 </a>
-                <a href="#servicios" data-id= "3">
+                <a href="#servicios" data-id= "3" class="link-3">
                     Servicios
                     <div class="barra barra-tres"></div>
                 </a>
-                <a href="#blog" data-id= "4">
+                <a href="#blog" data-id= "4" class="link-4">
                     Blog/Tutoriales
                     <div class="barra barra-cuatro"></div>
                 </a>
-                <a href="#contacto" data-id= "5">
+                <a href="#contacto" data-id= "5" class="link-5">
                     Contacto
                     <div class="barra barra-cinco"></div>
                 </a>
@@ -89,7 +89,7 @@
         <img src="/src/img/Frame logo.png" class="logo-imagen" alt="">
     </div> 
 
-    <section id="quienes-somos" data-aos = "fade-up" data-aos-delay="1000" data-aos-duration="2000">
+    <section id="quienes-somos" data-aos = "fade-up" data-aos-delay="1000" data-aos-duration="2000" style = " overflow-x: hidden ">
         <img src="./src/img/Imagen quienes somos.png" alt="" class="img-quienes-somos" data-aos="fade-right" data-aos-offset="600" data-aos-easing="linear" data-aos-duration="500" data-aos-delay ="500">
         <div class="informacion">
             <div class="vector1" data-aos="fade-left" data-aos-duration="900" data-aos-easing="ease-in-sine" data-aos-delay ="500"></div>
@@ -97,19 +97,20 @@
             <div class="vector3" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1200" data-aos-delay ="900"></div>
             <h2 class="titulo" data-aos="fade-zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1200">Sobre TAK !</h2>
             <p class="parrafo-1" data-aos="fade-left">
-            Somos un grupo de profesionales apasionados por el mundo digital y la comunicación, en busca de soluciones creativas para los issues de nuestros clientes. Creemos en el trabajo en equipo y la diversidad de opiniones, sabemos que siempre se obtienen mejores resultados en la variedad.</p>
-            <p class="parrafo-2" data-aos="fade-up-left">Estamos acá para ayudarte a comunicarte mejor con tu cliente, por medio de mensajes más claros, sencillos y en el medio adecuado. </p>
+                Somos un grupo de profesionales apasionados por el mundo digital y la comunicación, en busca de soluciones creativas para nuestros clientes.</p>
+            <p class="parrafo-2" data-aos="fade-up-left">Te ayudamos a conectar con tu público objetivo a través de una sólida estrategia de comunicación. </p>
         </div>
     </section>
 
     <main>
-        <section id="servicios" class="contenedor">
+        <section id="servicios" class="contenedor" style = " overflow-x: hidden;overflow-y: hidden  ">
             <h2 class="titulo-general" data-aos="fade-left" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">Nuestros Servicios</h2>
             <div class="contenedor-servicios">
                 <div class="row">
                     <div class="card-servicio" data-aos="fade-right" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">
                         <div class="info">
                             <h3 class="servicio-1"> Análisis y Estrategia de Comunicación Digital </h3>
+                            <div class="barra barra-uno"></div>
                             <p> Investigamos tu entorno digital y el de tu competencia para realizar un diagnóstico, y a partir de allí delineamos una estrategia de comunicación acorde a tu marca.</p>
                         </div>
                         <img src="/src/img/Vector (1).png" alt="" >
@@ -117,6 +118,7 @@
                     <div class="card-servicio" data-aos="fade-right" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">
                         <div class="info">
                             <h3 class="servicio-2">Gestión de Redes Sociales</h3>
+                            <div class="barra barra-dos"></div>
                             <p>Armamos un plan integral de redes sociales para poder gestionarlas en su totalidad.</p>
                         </div>
                         <img src="./src/img/Groupu.png" alt="">
@@ -124,6 +126,7 @@
                     <div class="card-servicio" data-aos="fade-right" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">
                         <div class="info">
                             <h3 class="servicio-3">Diseño y creación de Contenido </h3>
+                            <div class="barra barra-tres"></div>
                             <p>Planificamos y diseñamos los contenidos de tus redes. Fotografía. Videos y Diseño Gráfico</p>
                         </div>
                         <img src="./src/img/Group 44.png" alt="">
@@ -139,6 +142,7 @@
                         <img src="/src/img/Group 46.png" alt="">
                         <div class="info">
                             <h3 class="servicio-4"> Publicidad en Redes Sociales </h3>
+                            <div class="barra barra-cuatro"></div>
                             <p>Pautamos en Facebook e Instagram a partir de una estrategia de publicidad diseñada previamente.</p>
                         </div>
                     </div>
@@ -146,19 +150,26 @@
                         <img src="./src/img/Group.png" alt="">
                         <div class="info">
                             <h3 class="servicio-5">Asesoramiento</h3>
+                            <div class="barra barra-cinco"></div>
                             <p>Brindamos asesoramiento a marcas que quieran empezar el proceso de digitalización de su negocio.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="blog" class="contenedor">
+        <section id="blog" class="contenedor" style = " overflow-x: hidden;overflow-y: hidden  ">
             <h2 data-aos="fade-right" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">Nuestros Blogs y Tutos</h2>
             <p data-aos="fade-right" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200"> Las mejores notas y datos </p>
             <div class="vector1" data-aos="fade-left" data-aos-duration="900" data-aos-easing="ease-in-sine" data-aos-delay ="500"></div>
             <div class="vector2" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay ="700"></div>
             <div class="vector3" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1200" data-aos-delay ="900"></div>
-            <div class="contenedor-blog">
+            <div class="contenedor-blog" data-aos="fade-right" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">
+                <img src="./src/img/Imagen-blog.png" alt="">
+                <div class="info-blog">
+                    <h3 class="titulo">Todos nuestros blogs en un solo lugar</h3>
+                </div>
+            </div>
+            <!-- <div class="contenedor-blog">
                 <div class="column-1" data-aos="fade-right" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">
                     <div class="card-blog bloque-completo">
                         <a class="link-blog">Blog</a>
@@ -221,12 +232,15 @@
                     
                 </div>
                
-            </div>
+            </div> -->
         </section>
 
         <section id="contacto" class="contenedor">
             <h2 data-aos="zoom-in-down" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">Llego la hora que trabajemos juntos </h2>
-            <p data-aos="zoom-in-down" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">¡Nos encantaria saber de vos, dejanos un mensaje y charlemos!</p>
+            <div class="subtitulo" data-aos="zoom-in-down" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">
+                <p >¡Nos encantaria saber de vos, dejanos un mensaje y charlemos!</p>
+                <div class="barra"></div>
+            </div>
             <h3 data-aos="zoom-in-down" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">Elegí uno o mas temas</h3>
             <div class="temas" data-aos="zoom-in-down" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">
                 <div class="check">
@@ -298,6 +312,7 @@
         AOS.init({
             offset : 120,
             once: true,
+            // disable: 'mobile'
         });
     </script>
 

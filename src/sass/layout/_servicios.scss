@@ -43,10 +43,16 @@
                 margin-bottom: 5rem;
                 align-items: center;
                 gap: 3rem;
+
+                @include telefono {
+                    gap: 0;
+                }
                 
                 .info {
                     width: 306px;
                     cursor: pointer;
+                    position: relative;
+
                     h3{
                         font-size: 2.2rem;
                         text-align: center;
@@ -57,6 +63,17 @@
                             font-size: 2.3rem;
                         }
                     }
+
+                    .barra {
+                        position: absolute;
+                        height: 10px;
+                        width: 85%;
+                        top: 15px;
+                        z-index: -1;
+                        left: 10%;
+                        border-radius: 5px;
+                    }
+
                     p{
                         font-style: italic;
                         font-size: 1.5rem;
@@ -81,7 +98,7 @@
 
             .img-celular-variable {
                 position: absolute;
-                background-image: url("/src/img/Screen.png");
+                background-image: url("/src/img/pantalla-principal-servicio.png");
                 top: 55px;
                 height: 75%;
                 width: 80%;

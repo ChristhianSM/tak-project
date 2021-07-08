@@ -65,8 +65,7 @@ function validarCampo(e){
         datosIngresados.email = email.value
         datosIngresados.telefono = telefono.value
     }else{
-        btnEnviar.disabled = true;
-        
+        btnEnviar.disabled = true;   
     }
 }
 

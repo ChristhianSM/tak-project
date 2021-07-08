@@ -13,15 +13,49 @@
         }
     }
 
-    p{
-        font-size: 2.4rem;
-        text-align: center;
-        margin-bottom: 2rem;
+    .subtitulo{
+        position: relative;
+        p{
+            font-size: 2.4rem;
+            text-align: center;
+            margin-bottom: 2rem;
+    
+            @include telefono {
+                font-size: 2rem;
+            }
+        }
+    
+        .barra {
+            position: absolute;
+            height: 10px;
+            width: 40%;
+            top: 18px;
+            z-index: -1;
+            left: 30%;
+            border-radius: 5px;
+            background-color: green;
 
-        @include telefono {
-            font-size: 2rem;
+            @media (max-width: 1280px){
+                left: 15%;
+                width: 60%;
+            }
+
+            @include desktop-2{
+                left: 15%;
+                width: 70%;
+            }
+            @include desktop{
+                left: 25%;
+                width: 50%;
+            }
+
+            @include tablet{
+                left: 5%;
+                width: 90%;
+            }
         }
     }
+
     h3 {
         font-size: 2.2rem;
         font-weight: 100;
@@ -77,7 +111,7 @@
 
     .contenedor-formulario {
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         justify-content: center;
 
         .formulario-contacto {
@@ -134,15 +168,7 @@
         }
 
         img {
-            width: 600px;
-
-            @include desktop {
-                width: 500px;
-            }
-
-            @include desktop-2 {
-                width: 360px;
-            }
+            width: 40%;
 
             @include tablet {
                 display: none;
