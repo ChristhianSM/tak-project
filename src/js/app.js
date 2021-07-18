@@ -8,6 +8,8 @@ const btnEnviar = document.querySelector('.btn-enviar');
 const contenedorFormulario = document.querySelector('.contenedor-formulario');
 const formularioContacto = document.querySelector('.formulario-contacto');
 
+const divTema = document.querySelectorAll('.checkbox');
+
 const er = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 let datosIngresados = {
@@ -26,6 +28,11 @@ function eventosListener(){
     mensaje.addEventListener('blur', validarCampo);
 
     btnEnviar.addEventListener('click', enviarFormulario);
+
+    divTema.forEach( tema => {
+        tema.addEventListener("click", temaSeleccionado)
+    })
+
 }
 
 function validarCampo(e){
@@ -90,6 +97,14 @@ function enviarFormulario(e){
     console.log(datosIngresados)
 }
 
+function temaSeleccionado(e){
+    const div = e.target.parentElement;
+    if (div.classList.contains('correcto')) {
+        div.classList.remove('correcto');
+    }else {
+        div.classList.add('correcto')
+    }
+}
 
 function mostrarErrores(mensaje){
 

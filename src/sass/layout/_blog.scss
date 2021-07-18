@@ -36,7 +36,8 @@
         }
 
         @include telefono {
-            display: none;
+            right: 20px;
+            top: 150px
         }
     }
     .vector2 {
@@ -54,7 +55,7 @@
 
         @include telefono {
             right: 10%;
-            top: 15%;
+            top: 150px;
         }
     }
     .vector3 {
@@ -71,8 +72,8 @@
         }
 
         @include telefono {
-            right: 10%;
-            top: 14%;
+            right: 20%;
+            top: 180px;
         }
     }
 
@@ -82,6 +83,20 @@
         justify-content: space-around;
         flex-wrap: wrap;
         position: relative;
+
+        img {
+            width: 80%;
+
+            @include tablet{
+                width: 90%;
+            }
+
+            @include telefono{
+                width: 100%;
+            }
+        }
+
+        
 
         .info-blog {
             position: absolute;

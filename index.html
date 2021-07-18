@@ -15,33 +15,37 @@
     <link rel="stylesheet" href="./src/sass/app.css">
 </head>
 <body>
+
     <header class="header">
         <div class=" contenedor-header">
-            <div class="logo">
-                <img src="/src/img/Frame logo.png" class="logo-imagen" alt="">
+            <div class="logo" >
+                
             </div> 
             <div class="navegacion">
                 <a href="#" data-id= "1" class="link-1">
                     Inicio
-                    <div class="barra barra-uno barra-1"></div>
+                    <div class="barra barra-1"></div>
                 </a>
                 <a href="#quienes-somos" data-id= "2" class="link-2">
                     Quienes somos
-                    <div class="barra barra-dos" ></div>
+                    <div class="barra barra-2" ></div>
                 </a>
                 <a href="#servicios" data-id= "3" class="link-3">
                     Servicios
-                    <div class="barra barra-tres"></div>
+                    <div class="barra barra-3"></div>
                 </a>
                 <a href="#blog" data-id= "4" class="link-4">
                     Blog/Tutoriales
-                    <div class="barra barra-cuatro"></div>
+                    <div class="barra barra-4"></div>
                 </a>
                 <a href="#contacto" data-id= "5" class="link-5">
                     Contacto
-                    <div class="barra barra-cinco"></div>
+                    <div class="barra barra-5"></div>
                 </a>
             </div>
+        </div>
+        <div class="icono-scroll">
+            <img src="./src/img/Icono scroll.svg" alt="">
         </div>
     </header>
 
@@ -72,13 +76,10 @@
                     </a>
                     <div class="redes-sociales-mobile">
                         <a href=""> 
-                            <i class="fab fa-facebook-square" ></i>
+                            <img src="./src/img/Iconos redes 1.svg" alt="">
                         </a>
                         <a href="">
-                            <i class="fab fa-instagram-square"></i>
-                        </a>
-                        <a href="">
-                            <i class="fab fa-youtube"></i>
+                            <img src="./src/img/Iconos redes 2.svg" alt="">
                         </a>
                     </div>
                 </div>
@@ -86,11 +87,17 @@
         </div>
     </div>
     <div class="logo-mobile">
-        <img src="/src/img/Frame logo.png" class="logo-imagen" alt="">
+        <img src="/src/img/Logo-verde.svg" class="logo-imagen" alt="">
     </div> 
 
     <section id="quienes-somos" data-aos = "fade-up" data-aos-delay="1000" data-aos-duration="2000" style = " overflow-x: hidden ">
-        <img src="./src/img/Imagen quienes somos.png" alt="" class="img-quienes-somos" data-aos="fade-right" data-aos-offset="600" data-aos-easing="linear" data-aos-duration="500" data-aos-delay ="500">
+
+        <div class="imagen-quienes-somos" style = " overflow-x: hidden; overflow-y: hidden " >
+            <img src="./src/img/Imagen quienes somos.png" alt="" class="img-quienes-somos" data-aos="fade-right" data-aos-offset="600" data-aos-easing="linear" data-aos-duration="500" data-aos-delay ="500">  
+            <img src="./src/img/Circulo1.svg" alt="" class="circulo1" data-aos="zoom-in"  data-aos-duration="600">        
+            <img src="./src/img/Circulo2.svg" alt="" class="circulo2" data-aos="zoom-in"  data-aos-duration="600">        
+        </div>
+
         <div class="informacion">
             <div class="vector1" data-aos="fade-left" data-aos-duration="900" data-aos-easing="ease-in-sine" data-aos-delay ="500"></div>
             <div class="vector2" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay ="700"></div>
@@ -98,7 +105,8 @@
             <h2 class="titulo" data-aos="fade-zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1200">Sobre TAK !</h2>
             <p class="parrafo-1" data-aos="fade-left">
                 Somos un grupo de profesionales apasionados por el mundo digital y la comunicación, en busca de soluciones creativas para nuestros clientes.</p>
-            <p class="parrafo-2" data-aos="fade-up-left">Te ayudamos a conectar con tu público objetivo a través de una sólida estrategia de comunicación. </p>
+            <p class="parrafo-2" data-aos="fade-up-left">Te <span class="subrayadoUno">ayudamos a conectar</span> con  <span class="subrayadoDos">tu público objetivo</span> a través de una <span class="subrayadoTres">sólida estrategia de comunicación.</span> 
+            </p>
         </div>
     </section>
 
@@ -109,27 +117,32 @@
                 <div class="row">
                     <div class="card-servicio" data-aos="fade-right" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">
                         <div class="info">
-                            <h3 class="servicio-1"> Análisis y Estrategia de Comunicación Digital </h3>
-                            <div class="barra barra-uno"></div>
-                            <p> Investigamos tu entorno digital y el de tu competencia para realizar un diagnóstico, y a partir de allí delineamos una estrategia de comunicación acorde a tu marca.</p>
+                            <h3 class="servicio-1"> 
+                                <span class="subrayado-1">Análisis y Estrategia de</span> 
+                                <span class="subrayado-2">Comunicación Digital</span> 
+                            </h3>
+                            <div class="barra barra-1"></div>
                         </div>
-                        <img src="/src/img/Vector (1).png" alt="" >
+                        <div class="icono-servicio icono-servicio-uno" style="background-image: url('/src/img/icon-03.svg');"></div>
                     </div>
                     <div class="card-servicio" data-aos="fade-right" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">
                         <div class="info">
-                            <h3 class="servicio-2">Gestión de Redes Sociales</h3>
-                            <div class="barra barra-dos"></div>
-                            <p>Armamos un plan integral de redes sociales para poder gestionarlas en su totalidad.</p>
+                            <h3 class="servicio-2">
+                               <span class="subrayado-3">Gestión de Redes Sociales</span> 
+                            </h3>
+                            <div class="barra barra-2"></div>
                         </div>
-                        <img src="./src/img/Groupu.png" alt="">
+                        <div class="icono-servicio icono-servicio-dos" style="background-image: url('/src/img/icon-04.svg')"></div>;
                     </div>
                     <div class="card-servicio" data-aos="fade-right" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">
                         <div class="info">
-                            <h3 class="servicio-3">Diseño y creación de Contenido </h3>
-                            <div class="barra barra-tres"></div>
-                            <p>Planificamos y diseñamos los contenidos de tus redes. Fotografía. Videos y Diseño Gráfico</p>
+                            <h3 class="servicio-3">
+                                <span class="subrayado-4">Diseño y creación de</span> 
+                                <span class="subrayado-5">Contenido</span> 
+                            </h3>
+                            <div class="barra barra-3"></div>
                         </div>
-                        <img src="./src/img/Group 44.png" alt="">
+                        <div class="icono-servicio icono-servicio-tres" style="background-image: url('/src/img/icon-05.svg')"></div>
                     </div>
                 </div>
                 <div class="row">
@@ -139,19 +152,21 @@
                 </div>
                 <div class="row">
                     <div class="card-servicio" data-aos="fade-left" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">
-                        <img src="/src/img/Group 46.png" alt="">
+                        <div class="icono-servicio icono-servicio-cuatro" style="background-image: url('/src/img/icon-01.svg')"></div>
                         <div class="info">
-                            <h3 class="servicio-4"> Publicidad en Redes Sociales </h3>
-                            <div class="barra barra-cuatro"></div>
-                            <p>Pautamos en Facebook e Instagram a partir de una estrategia de publicidad diseñada previamente.</p>
+                            <h3 class="servicio-4"> 
+                                <span class="subrayado-6">Publicidad en Redes Sociales </span>
+                            </h3>
+                            <div class="barra barra-4"></div>
                         </div>
                     </div>
                     <div class="card-servicio" data-aos="fade-left" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">
-                        <img src="./src/img/Group.png" alt="">
+                        <div class="icono-servicio icono-servicio-cinco" style="background-image: url('/src/img/icon-02.svg')"></div>
                         <div class="info">
-                            <h3 class="servicio-5">Asesoramiento</h3>
-                            <div class="barra barra-cinco"></div>
-                            <p>Brindamos asesoramiento a marcas que quieran empezar el proceso de digitalización de su negocio.</p>
+                            <h3 class="servicio-5">
+                                <span class="subrayado-7">Asesoramiento</span>
+                            </h3>
+                            <div class="barra barra-5"></div>
                         </div>
                     </div>
                 </div>
@@ -165,102 +180,34 @@
             <div class="vector3" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1200" data-aos-delay ="900"></div>
             <div class="contenedor-blog" data-aos="fade-right" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">
                 <img src="./src/img/Imagen-blog.png" alt="">
-                <div class="info-blog">
-                    <h3 class="titulo">Todos nuestros blogs en un solo lugar</h3>
-                </div>
             </div>
-            <!-- <div class="contenedor-blog">
-                <div class="column-1" data-aos="fade-right" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">
-                    <div class="card-blog bloque-completo">
-                        <a class="link-blog">Blog</a>
-                        <img src="./src/img/email-marketing.png" alt="">
-
-                        <div class="info-blog">
-                            <h3 class="titulo">Todo sobre mail marketing</h3>
-                            <p class="fecha">12 julio 2021</p>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="card-blog bloque-medio ">
-                            <a class="link-blog">Blog</a>
-                            <img src="./src/img/Social Media (1).png" alt="">
-                            <div class="info-blog info-blog-medio">
-                                <h3 class="titulo">Lo ultimo sobre redes</h3>
-                                <p class="fecha">12 julio 2021</p>
-                            </div>
-                        </div>
-                        <div class="card-blog bloque-medio">
-                            <a class="link-blog">Blog</a>
-                            <img src="./src/img/Social Media (1).png" alt="">
-                            <div class="info-blog info-blog-medio">
-                                <h3 class="titulo">Lo ultimo sobre redes</h3>
-                                <p class="fecha">12 julio 2021</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="column-2" data-aos="fade-left" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">
-                    <div class="row">
-                        <div class="card-blog bloque-medio">
-                            <a class="link-blog">Tutorial</a>
-                            <img src="./src/img/social-recruiting-redes-sociales-810x766 1.png" alt="">
-                            <div class="info-blog info-blog-medio">
-                                <h3 class="titulo">Como tener mas visitas</h3>
-                                <p class="fecha">12 julio 2021</p>
-                            </div>
-                        </div>
-                        <div class="card-blog bloque-medio">
-                            <a class="link-blog">Tutorial</a>
-                            <img src="./src/img/social-recruiting-redes-sociales-810x766 2.png" alt="">
-                            <div class="info-blog info-blog-medio">
-                                <h3 class="titulo">Como tener mas visitas</h3>
-                                <p class="fecha">12 julio 2021</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-blog bloque-completo">
-                        <a class="link-blog">Tutorial</a>
-                        <img src="./src/img/facebook-ads-hoteles.png" alt="">
-                        <div class="info-blog">
-                            <h3 class="titulo">Como crear una campaña</h3>
-                            <p class="fecha">12 julio 2021</p>
-                        </div>
-                    </div>
-    
-                    
-                </div>
-               
-            </div> -->
         </section>
 
         <section id="contacto" class="contenedor">
             <h2 data-aos="zoom-in-down" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">Llego la hora que trabajemos juntos </h2>
             <div class="subtitulo" data-aos="zoom-in-down" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">
-                <p >¡Nos encantaria saber de vos, dejanos un mensaje y charlemos!</p>
-                <div class="barra"></div>
+                <p >¡Contanos en que te podemos ayudar!</p>
             </div>
             <h3 data-aos="zoom-in-down" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">Elegí uno o mas temas</h3>
             <div class="temas" data-aos="zoom-in-down" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">
                 <div class="check">
-                    <input type="checkbox" name="" id="tema1">
+                    <input type="checkbox" name="" id="tema1" class="checkbox">
                     <label for="tema1">Análisis y Estrategia de Comunicación Digital</label>
                 </div>
                 <div class="check">
-                    <input type="checkbox" name="" id="tema2">
+                    <input type="checkbox" name="" id="tema2" class="checkbox">
                     <label for="tema2">Gestion de Redes Sociales</label>
                 </div>
                 <div class="check">
-                    <input type="checkbox" name="" id="tema3">
+                    <input type="checkbox" name="" id="tema3" class="checkbox">
                     <label for="tema3">Diseño y creacion de Contenido</label>
                 </div>
                 <div class="check">
-                    <input type="checkbox" name="" id="tema4">
+                    <input type="checkbox" name="" id="tema4" class="checkbox">
                     <label for="tema4">Publicidad en Redes Sociales</label>
                 </div>
                 <div class="check">
-                    <input type="checkbox" name="" id="tema5">
+                    <input type="checkbox" name="" id="tema5" class="checkbox">
                     <label for="tema5">Asesoramiento</label>
                 </div>
             </div>
@@ -276,32 +223,31 @@
                     <button class="btn-enviar" disabled>Enviar</button>
                 </form>
 
-                <img src="./src/img/corinne-kutz-tMI2_-r5Nfo-unsplash 1.png" alt="" data-aos="fade-up-left" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">
+                <img src="./src/img/corinne-kutz-tMI2_-r5Nfo-unsplash 1.png" alt="" data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">  
             </div>
         </section>
     </main>
 
     <footer class="footer">
         <div class="contenedor contenedor-redes">
-            <h2 data-aos="fade-zoom-in" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">Encuentranos tambien en</h2>
+            <h2 data-aos="fade-zoom-in" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">¡Seguinos en!</h2>
             <div class="redes-sociales">
-                <a href=""> 
-                    <i class="fab fa-facebook-square" ></i>
+                <a href="#"> 
+                    <img src="./src/img/Iconos redes 1.svg" alt="" >
                 </a>
-                <a href="">
-                    <i class="fab fa-instagram-square"></i>
-                </a>
-                <a href="">
-                    <i class="fab fa-youtube"></i>
+                <a href="#">
+                    <img src="./src/img/Iconos redes 2.svg" alt="">
                 </a>
             </div>
             <div class="logo-footer" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay ="200">
-                <img src="/src/img/Frame logo.png" class="logo-imagen" alt="">
+                <img src="/src/img/Logo-verde.svg" class="logo-imagen" alt="">
             </div> 
         </div>
     </footer>
 
-    <a href="#" class="subir"> Subir </a>
+    <a href="#" class="subir">
+        <img src="./src/img/Icono scroll Subir.svg" alt="">
+    </a>
 
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
