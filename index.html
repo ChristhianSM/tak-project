@@ -191,36 +191,36 @@
             <h3 data-aos="zoom-in-down" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">Elegí uno o mas temas</h3>
             <div class="temas" data-aos="zoom-in-down" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">
                 <div class="check">
-                    <input type="checkbox" name="" id="tema1" class="checkbox">
+                    <input type="checkbox" name="tema[]" id="tema1" value="[Análisis y Estrategia de Comunicación Digital]" form="form1" class="checkbox">
                     <label for="tema1">Análisis y Estrategia de Comunicación Digital</label>
                 </div>
                 <div class="check">
-                    <input type="checkbox" name="" id="tema2" class="checkbox">
+                    <input type="checkbox" name="tema[]" id="tema2" value="[Gestion de Redes Sociales]" form="form1" class="checkbox">
                     <label for="tema2">Gestion de Redes Sociales</label>
                 </div>
                 <div class="check">
-                    <input type="checkbox" name="" id="tema3" class="checkbox">
+                    <input type="checkbox" name="tema[]" id="tema3" value="[Diseño y creacion de Contenido]" form="form1" class="checkbox">
                     <label for="tema3">Diseño y creacion de Contenido</label>
                 </div>
                 <div class="check">
-                    <input type="checkbox" name="" id="tema4" class="checkbox">
+                    <input type="checkbox" name="tema[]" id="tema4" value="[Publictemadad en Redes Sociales]" form="form1" class="checkbox">
                     <label for="tema4">Publicidad en Redes Sociales</label>
                 </div>
                 <div class="check">
-                    <input type="checkbox" name="" id="tema5" class="checkbox">
+                    <input type="checkbox" name="tema[]" id="tema5" value="[Asesoramiento]" form="form1" class="checkbox">
                     <label for="tema5">Asesoramiento</label>
                 </div>
             </div>
 
             <h3>Tu mensaje</h3>
             <div class="contenedor-formulario" data-aos="fade-up-right" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">
-                <form class="formulario-contacto">
-                    <input type="text" placeholder="Tu nombre" class="nombre">
-                    <input type="email" placeholder="Tu mail" class="email">
-                    <input type="tel" placeholder="Tu telefono" class="telefono">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Deja tu mensaje" class="mensaje"></textarea>
-    
-                    <button class="btn-enviar" disabled>Enviar</button>
+                <form class="formulario-contacto" method="POST" action="back-end/formulario.php" id="form1">
+                    <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" class="nombre">
+                    <input type="email" name="email" id="email" placeholder="Tu mail" class="email">
+                    <input type="tel" name="telefono" id="telefono" placeholder="Tu telefono" class="telefono">
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Deja tu mensaje" class="mensaje"></textarea>
+                    <!-- disabled -->
+                    <button class="btn-enviar" type="submit" value="Submit" disabled>Enviar</button>
                 </form>
 
                 <img src="./src/img/corinne-kutz-tMI2_-r5Nfo-unsplash 1.png" alt="" data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay ="200">  
