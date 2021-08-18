@@ -1,8 +1,9 @@
 .header {
     padding: $separacion 0;
-    background-image: url("/src/img/Frame\ Fondo\ in.png");
-    // background-image: url("/src/img/Fondo.png");
-    height: 100vh;
+    // background-image: url("/src/img/fondo-header-2.png");
+    // background-image: url("/src/img/Fondo 1.png");
+    background-image: url("/src/img/fondo-header.png");
+    height: 1000px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -34,33 +35,15 @@
         }
 
         .logo {
-            top: 300px;
+            top: 280px;
             left: 50%;
             margin-left: -200px;
             position: absolute;
             transition: all 0.8s ease-in-out;
             width: 400px;
             height: 400px;
-            background-image: url("/src/img/Logo-verde.svg");
+            background-image: url("/src/img/logo-verde.svg");
             background-repeat: no-repeat;
-
-            @include desktop {
-                top: 220px;
-                left: 50%;
-            }
-
-            @media (max-width : 1024px) {
-                top: 220px;
-            }
-
-            @media (max-width : 1280px) {
-                top: 260px;
-            }
-
-            @include tablet {
-                top: 220px;
-                left: 50%;
-            }
 
             img {
                 width: 100%;
@@ -112,30 +95,29 @@
         transition: all 0.8s;
     }
 
-    // .barra-2 {
-    //     background-color: #70AF50;
-    //     transition: all 0.8s;
-    // }
+    .texto-flotante {
+        position: absolute;
+        bottom: 350px;
+        color: #1F1F44;
+        text-align: center;
+        
+        h2 {
+            font-size: 3rem;
+            font-style: italic;
 
-    // .barra-3 {
-    //     background-color: #EE4498;
-    //     transition: all 0.8s;
-    // }
+            span {
+                font-weight: 900;
+                margin-top: 1rem;
+                display: block;
+            }
+        }
 
-    // .barra-4 {
-    //     background-color: #FBDE48;
-    //     transition: all 0.8s;
-    // }
-
-    // .barra-5 {
-    //     // background-color: #70AF50;
-    //     background-color: black;
-    //     transition: all 0.8s;
-    // }
+    }
 
     .icono-scroll {
         position: absolute;
-        bottom: 0;
+        bottom: 120px;
+        width: 100px;
 
         img {
             
@@ -203,7 +185,7 @@
 
 .logo-mobile {
     display: none;
-    left: 40px;
+    left: 25px;
     position: absolute;
     top: 260px;
 
@@ -214,7 +196,6 @@
     
     @include telefono {
         display: block;
-        left: 10px;
     }
 }
 
@@ -234,7 +215,6 @@
 @media (max-width : 425px) {
 
     .header {
-        // justify-content: flex-end;
         background-color: rgba(0, 0, 0, 0.75);
     }
     .menu-toogle{

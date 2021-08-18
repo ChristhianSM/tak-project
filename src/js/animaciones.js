@@ -2,6 +2,7 @@
     let scroll;
 
     const subir = $('.subir');
+    const textoFlotante = $('.texto-flotante');
     const iconoScroll = $('.icono-scroll');
     subir.hide();
 
@@ -35,6 +36,7 @@
         if (scroll > 200) {
             $(subir).fadeIn("3000");
             $(iconoScroll).hide("2000");
+            $(textoFlotante).hide("2000");
             if (!flag) {
                 $(".contenedor-header").css({
                     width: "100%",
@@ -47,8 +49,8 @@
                     width : "80px",
                     height : "80px",
                     top: "0px",
-                    left: "220px",
-                    backgroundImage : "url('/src/img/Frame logo.svg')"
+                    left: "200px",
+                    backgroundImage : "url('/src/img/frame-logo.svg')"
                 });
 
                 $('.navegacion').css({
@@ -60,6 +62,7 @@
         }else{
             $(subir).fadeOut("2000");
             $(iconoScroll).fadeIn("2000");
+            $(textoFlotante).fadeIn("3000");
             if (flag) {
                 $(".contenedor-header").css({
                     width: "80%",
@@ -69,12 +72,12 @@
                     transition : "all 0.9s ease-in",
                 })
                 $(".logo").css({
-                    top: "220px",
+                    top: "280px",
                     left: "50%",
                     marginLeft: "-200px",
                     height: "400px",
                     width: "400px",
-                    backgroundImage : "url('/src/img/Logo-verde.svg')"
+                    backgroundImage : "url('/src/img/logo-verde.svg')"
                 });
                 $('.navegacion').css({
                     width: "100%"
@@ -130,7 +133,7 @@ $(window).scroll(function () {
         limpiarColorTexto();
         cambiarColorTexto('.link-5','#48334F');
         $(".logo").css({
-            backgroundImage : "url('/src/img/Frame logo.svg')"
+            backgroundImage : "url('/src/img/frame-logo.svg')"
         });
     }
 });
@@ -265,8 +268,7 @@ servicioCinco.addEventListener('mouseout', () => {
 })
 
 /* Funciones reutilizables */
-function limpiarBarraColor(localizacion, numero){
-    console.log(`${localizacion} .barra-${numero}`);
+function limpiarBarraColor(localizacion){
     for (let i = 1; i <= 5; i++){
         $(`${localizacion} .barra-${i}`).css({
             backgroundColor: 'transparent'

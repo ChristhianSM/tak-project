@@ -136,4 +136,9 @@ function limpiarCampos() {
             servicio.checked = false;
         }
     })
+
+    const divServicios = document.querySelectorAll(".correcto");
+    divServicios.forEach(div => {
+        div.classList.remove('correcto');
+    })
 }

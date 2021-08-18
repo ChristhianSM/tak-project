@@ -14,7 +14,7 @@
         margin-bottom: 1.5rem;
     }
     p{
-        font-size: 1.5rem;
+        font-size: 2.4rem;
         line-height: 1;
         font-style: italic;
         margin-bottom: 5rem;
@@ -96,8 +96,6 @@
             }
         }
 
-        
-
         .info-blog {
             position: absolute;
             bottom: 20px;
@@ -109,104 +107,6 @@
                 color: white;
                 font-style: italic;
                 font-weight: bold;
-            }
-        }
-        .card-blog{ 
-            position: relative;
-
-            .link-blog {
-                position: absolute;
-                top: 15px;
-                right: 20px;
-                color: rgb(0, 0, 0);
-                background-color: #F0F0F0;
-                border: 1px solid #F0F0F0;
-                border-radius: 5px;
-                padding: 5px 10px;
-                text-transform: uppercase;
-                font-size: 1.5rem;
-                font-style: italic;
-                cursor: pointer;
-            }
-
-            /* .info-blog{
-                position: absolute;
-                bottom: -20px;
-                left: 20px;
-                width: 170px;
-
-                .titulo {
-                    font-size: 2.6rem;
-                    color: white;
-                    font-style: italic;
-                    margin-bottom: 1rem;
-                    font-weight: 700;
-                }
-
-                .fecha {
-                    color: white;
-                    font-style: normal;
-                }
-            } */
-
-            .info-blog-medio {
-                bottom: -30px;
-
-                @include telefono {
-                    bottom: 0px;
-                }
-
-                .titulo {
-                    font-size: 2rem;
-                    color: white;
-                    font-style: italic;
-                    margin-bottom: 1rem;
-                    font-weight: 700;
-                }
-
-                .fecha {
-                    color: white;
-                    font-style: normal;
-
-                    @include telefono {
-                        display: none;
-                    }
-                }
-            }
-        }
-
-        .column-1 {
-            width: 45%;
-            .row {
-                display: flex;
-                margin-top: 2rem;
-                gap: 1rem;
-
-                .bloque-medio {
-                    width: 50%;
-                }
-            }
-
-            @include tablet{
-                width: 100%;
-                margin-bottom: 2rem;
-            }
-        }
-        .column-2 {
-            width: 45%;
-            .row {
-                display: flex;
-                margin-bottom: 2rem;
-                gap: 1rem;
-                
-                .bloque-medio {
-                    width: 50%;
-                }
-            }
-
-            @include tablet{
-                width: 100%;
-                margin-bottom: 2rem;
             }
         }
     }
