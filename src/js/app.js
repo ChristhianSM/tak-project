@@ -36,7 +36,7 @@ function eventosListener(){
 }
 
 function validarCampo(e){
-
+    
     if (e.target.value.length < 2) {
         e.target.classList.add('incorrecto')
         e.target.classList.remove('correcto')
