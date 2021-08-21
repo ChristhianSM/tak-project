@@ -1,9 +1,6 @@
 .header {
     padding: $separacion 0;
-    // background-image: url("/src/img/fondo-header-2.png");
-    // background-image: url("/src/img/Fondo 1.png");
     background-image: url("../img/fondo-header.png");
-    // background-image: url("/src/img/fondo-header.png");
     height: 1000px;
     background-position: center;
     background-size: cover;
@@ -43,7 +40,7 @@
             transition: all 0.8s ease-in-out;
             width: 400px;
             height: 400px;
-            background-image: url("/src/img/logo-verde.svg");
+            background-image: url("../img/logo-verde.svg");
             background-repeat: no-repeat;
 
             img {
@@ -169,7 +166,8 @@
             display: flex;
             align-items: center;
             font-size: 3rem;
-            border: none;
+            // border: none;
+            border: 1px solid black;
             border-radius: 50px;
             padding: 10px 20px;
             outline: none;
@@ -177,9 +175,9 @@
             background-color: #FEFDFD;
             color: #8B8B8B;
 
-            i{
-                margin-left: 1rem;
-            }
+            // i{
+            //     margin-left: 1rem;
+            // }
         }
     }
 }

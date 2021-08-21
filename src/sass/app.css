@@ -487,7 +487,7 @@ main {
   transition: all 0.8s ease-in-out;
   width: 400px;
   height: 400px;
-  background-image: url("/src/img/logo-verde.svg");
+  background-image: url("../img/logo-verde.svg");
   background-repeat: no-repeat;
 }
 
@@ -632,17 +632,13 @@ main {
       -ms-flex-align: center;
           align-items: center;
   font-size: 3rem;
-  border: none;
+  border: 1px solid black;
   border-radius: 50px;
   padding: 10px 20px;
   outline: none;
   cursor: pointer;
   background-color: #FEFDFD;
   color: #8B8B8B;
-}
-
-.menu-toogle .hamburguesa button i {
-  margin-left: 1rem;
 }
 
 .logo-mobile {
@@ -1216,7 +1212,7 @@ main {
 
 #servicios .contenedor-servicios .row .img-celular-variable {
   position: absolute;
-  background-image: url("/src/img/pantalla-principal-servicio.png");
+  background-image: url("../img/pantalla-principal-servicio.png");
   top: 10%;
   height: 75%;
   width: 80%;
