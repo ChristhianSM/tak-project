@@ -13,11 +13,11 @@ const divTema = document.querySelectorAll('.checkbox');
 const er = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 let datosIngresados = {
-    mensaje: '', 
-    nombre : '',
-    telefono : '',
+    message: '',
+    name : '',
+    phone : '',
     email: '',
-    servicios : [],
+    subjects : [],
 }
 
 eventosListener();
@@ -32,7 +32,6 @@ function eventosListener(){
     divTema.forEach( tema => {
         tema.addEventListener("click", temaSeleccionado)
     })
-
 }
 
 function validarCampo(e){
@@ -57,20 +56,21 @@ function validarCampo(e){
         const servicios = document.querySelectorAll('input[type="checkbox"]');
         servicios.forEach( servicio => {
             if (servicio.checked) {
-                datosIngresados.servicios.push(servicio.nextElementSibling.textContent);
+                datosIngresados.subjects.push(servicio.nextElementSibling.textContent);
             }
         })
 
         btnEnviar.disabled = false;
         $(btnEnviar).css({
-            // backgroundColor : 'green',
             color: 'green',
             cursor : 'pointer',
         });
-        datosIngresados.mensaje = mensaje.value
-        datosIngresados.nombre = nombre.value
-        datosIngresados.email = email.value
-        datosIngresados.telefono = telefono.value
+        datosIngresados = {
+            message: mensaje.value,
+            name: nombre.value,
+            email: email.value,
+            phone: telefono.value
+        }
     }else{
         btnEnviar.disabled = true;   
     }
@@ -80,21 +80,39 @@ function enviarFormulario(e){
     e.preventDefault();
     
     const servicios = document.querySelectorAll('input[type="checkbox"]');
-    datosIngresados.servicios = [];
+    datosIngresados.subjects = [];
     servicios.forEach( servicio => {
         if (servicio.checked) {
-            datosIngresados.servicios.push(servicio.nextElementSibling.textContent);
+            datosIngresados.subjects.push(servicio.nextElementSibling.textContent);
         }
     })
 
-    if (datosIngresados.servicios.length === 0) {
+    if (datosIngresados.subjects.length === 0) {
         mostrarErrores('Debes Ingresar el servicio o los servicios que necesitas');
         return
     }
 
     limpiarCampos();
     
-    console.log(datosIngresados)
+    // console.log(datosIngresados)
+
+    $.ajax({
+        method: "POST",
+        url: "back-end/formulario.php",
+        data: datosIngresados,
+        dataType: "json"
+    })
+    .done( response => {
+        const sendNotification = $('#send-notification');
+        if(response.error_status){
+            sendNotification.html(`<p>${response.error_detail}</p>`);
+            $("#send-notification p").css("background-color", "#ec4f5e").css("margin", "20px 0px");
+        }else{
+            sendNotification.html(`<p>${response.message}</p>`);
+            $("#send-notification p").css("background-color", "#88ef87").css("margin", "20px 0px");
+        }
+        setTimeout(() => $("#send-notification p").fadeIn(400).remove(), 5000);
+    });
 }
 
 function temaSeleccionado(e){

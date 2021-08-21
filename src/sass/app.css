@@ -426,7 +426,7 @@ main {
 /* Layouts */
 .header {
   padding: 2rem 0;
-  background-image: url("/src/img/fondo-header.png");
+  background-image: url("../img/fondo-header.png");
   height: 1000px;
   background-position: center;
   background-size: cover;
