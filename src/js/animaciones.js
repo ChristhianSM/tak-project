@@ -33,10 +33,14 @@
 
     $(window).scroll(function () { 
         scroll = $(window).scrollTop();
+        if (scroll > 10) {
+            $(textoFlotante).hide("2000");
+        }else{
+            $(textoFlotante).fadeIn("3000");
+        }
         if (scroll > 200) {
             $(subir).fadeIn("3000");
             $(iconoScroll).hide("2000");
-            $(textoFlotante).hide("2000");
             if (!flag) {
                 $(".contenedor-header").css({
                     width: "100%",
@@ -62,7 +66,6 @@
         }else{
             $(subir).fadeOut("2000");
             $(iconoScroll).fadeIn("2000");
-            $(textoFlotante).fadeIn("3000");
             if (flag) {
                 $(".contenedor-header").css({
                     width: "80%",
@@ -72,7 +75,7 @@
                     transition : "all 0.9s ease-in",
                 })
                 $(".logo").css({
-                    top: "280px",
+                    top: "260px",
                     left: "50%",
                     marginLeft: "-200px",
                     height: "400px",

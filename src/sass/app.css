@@ -479,7 +479,7 @@ main {
 }
 
 .header .contenedor-header .logo {
-  top: 280px;
+  top: 260px;
   left: 50%;
   margin-left: -200px;
   position: absolute;
@@ -551,9 +551,15 @@ main {
 
 .header .texto-flotante {
   position: absolute;
-  bottom: 350px;
+  bottom: 370px;
   color: #1F1F44;
   text-align: center;
+}
+
+@media (max-width: 488px) {
+  .header .texto-flotante {
+    bottom: 340px;
+  }
 }
 
 .header .texto-flotante h2 {
@@ -639,18 +645,18 @@ main {
   cursor: pointer;
   background-color: #FEFDFD;
   color: #8B8B8B;
+  margin-left: 50px;
 }
 
 .logo-mobile {
   display: none;
   left: 25px;
   position: absolute;
-  top: 260px;
+  top: 240px;
 }
 
 .logo-mobile img {
   height: 350px;
-  width: 350px;
 }
 
 @media (max-width: 488px) {
@@ -889,10 +895,10 @@ main {
 
 @media (max-width: 488px) {
   #quienes-somos .informacion .vector1 {
-    right: 10%;
+    right: 5%;
     top: 25%;
-    height: 20px;
-    width: 130px;
+    height: 15px;
+    width: 100px;
   }
 }
 
@@ -920,7 +926,7 @@ main {
     right: 3%;
     top: 20%;
     height: 20px;
-    width: 130px;
+    width: 100px;
   }
 }
 
@@ -945,7 +951,7 @@ main {
 
 @media (max-width: 488px) {
   #quienes-somos .informacion .vector3 {
-    right: 35%;
+    right: 30%;
     top: 30%;
     height: 10px;
     width: 40px;
@@ -1275,7 +1281,7 @@ main {
 @media (max-width: 488px) {
   #blog .vector1 {
     right: 20px;
-    top: 150px;
+    top: 180px;
   }
 }
 
@@ -1471,8 +1477,7 @@ main {
 
 @media (max-width: 768px) {
   #contacto .temas .check label, #contacto .temas .check input {
-    font-size: 1.6rem;
-    margin-left: 0.5rem;
+    margin-left: 0.2rem;
   }
 }
 

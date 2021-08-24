@@ -33,7 +33,7 @@
         }
 
         .logo {
-            top: 280px;
+            top: 260px;
             left: 50%;
             margin-left: -200px;
             position: absolute;
@@ -95,9 +95,13 @@
 
     .texto-flotante {
         position: absolute;
-        bottom: 350px;
+        bottom: 370px;
         color: #1F1F44;
         text-align: center;
+
+        @include telefono {
+            bottom: 340px;
+        }
         
         h2 {
             font-size: 3rem;
@@ -174,7 +178,7 @@
             cursor: pointer;
             background-color: #FEFDFD;
             color: #8B8B8B;
-
+            margin-left:50px ;
             // i{
             //     margin-left: 1rem;
             // }
@@ -186,11 +190,10 @@
     display: none;
     left: 25px;
     position: absolute;
-    top: 260px;
+    top: 240px;
 
     img {
         height: 350px;
-        width: 350px;
     }
     
     @include telefono {
