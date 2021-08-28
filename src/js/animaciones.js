@@ -187,6 +187,7 @@ servicioUno.addEventListener('mouseover', () => {
         backgroundImage: 'url("/src/img/Analisis-servicio.png")',
         transition: 'all 0.8s ease-in-out'
     });
+
     limpiarBarraColor('#servicios','1');
     mostrarBarraColor('#servicios', '1', 'yellow');
     mostrarIconoServicioColor('#servicios', "uno", '/src/img/icon-08.svg')

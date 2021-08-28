@@ -427,6 +427,7 @@ main {
 .header {
   padding: 2rem 0;
   background-image: url("../img/fondo-header.png");
+  background-size: cover;
   height: 1000px;
   background-position: center;
   background-size: cover;
@@ -650,7 +651,7 @@ main {
 
 .logo-mobile {
   display: none;
-  left: 25px;
+  width: 100%;
   position: absolute;
   top: 240px;
 }
@@ -1235,7 +1236,7 @@ main {
 }
 
 #blog {
-  padding-top: 10rem;
+  padding-top: 11rem;
   position: relative;
 }
 

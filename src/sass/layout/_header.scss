@@ -1,6 +1,10 @@
 .header {
     padding: $separacion 0;
     background-image: url("../img/fondo-header.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     height: 1000px;
     background-position: center;
     background-size: cover;
@@ -188,7 +192,8 @@
 
 .logo-mobile {
     display: none;
-    left: 25px;
+    // left: 25px;
+    width: 100%;
     position: absolute;
     top: 240px;
 
